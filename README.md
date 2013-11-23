@@ -1,6 +1,6 @@
 Trabajo Practico Final
 =======================
-Seguridad y calidad en aplicaciones web a
+Seguridad y calidad en aplicaciones web
 -------------------------------------------
 
 Cursada 2013 - 2do Cuatrimestre

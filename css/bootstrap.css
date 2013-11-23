@@ -7703,3 +7703,15 @@ input[type="color"]:focus,
 .affix {
   position: fixed;
 }
+
+/**
+* Personal Styles
+*/
+
+.precio {
+  font-size: 2em;
+}
+
+.promedio {
+  font-size: 3em;
+}
