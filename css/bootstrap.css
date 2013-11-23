@@ -7715,3 +7715,16 @@ input[type="color"]:focus,
 .promedio {
   font-size: 3em;
 }
+
+.comments { /* Container */
+  height: 240px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+
+.productos {
+  overflow-y: scroll;
+  height: 300px;
+  margin-bottom: 10px;
+}
