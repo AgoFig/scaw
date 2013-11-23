@@ -3222,7 +3222,7 @@ input[type="button"].btn-block {
   content: "\e113";
 }
 
-.glyphicon-chevron-down:before {
+.glyphicon-chevron-down:before {  
   content: "\e114";
 }
 
@@ -7727,4 +7727,22 @@ input[type="color"]:focus,
   overflow-y: scroll;
   height: 300px;
   margin-bottom: 10px;
+}
+
+.semana {
+margin-top: 28px;
+}
+
+#desplega-comentarios {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.comentarios-desplegados {
+  display: none;
+}
+
+.drop-down {
+  text-align: center;
+  padding-top: 12px;
 }

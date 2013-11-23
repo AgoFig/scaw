@@ -62,7 +62,7 @@
               <table class="table table-striped table-bordered table-hover">
                 <thead>
                   <tr>
-                    <th>#</th>
+                    <th>ID</th>
                     <th>Producto</th>
                     <th>Precio</th>
                   </tr>
@@ -110,8 +110,14 @@
 
           <div class="col-lg-4">
             <div class="panel panel-default col">
-              <div class="panel-heading">Comentarios</div>
-              <div class="panel-body">
+            <div id="desplega-comentarios"  class="row">
+              <div class="panel-heading col-lg-10 col-xs-10 col-sm-10" >Comentarios</div>
+              <div class="col-lg-2 col-xs-2 col-sm-2 drop-down">
+                <i class="glyphicon glyphicon-chevron-down "></i>
+              </div>
+              
+            </div>
+              <div class="panel-body comentarios-desplegados">
                 <div class="comments">
                 <div class="row comentario"><strong class="col-lg-4">Autor:</strong><p class="col-lg-8">Contenido  del comentario.</p></div>
                 <div class="row comentario"><strong class="col-lg-4">Autor:</strong><p class="col-lg-8">Contenido  del comentario.</p></div>
@@ -144,7 +150,7 @@
               <div class="row">
                 <h2 class="col-6 col-sm-6 col-lg-4">Minimo</h2>
                 <div class="col-6 col-sm-6 col-lg-4">
-                  <select>
+                  <select class="semana">
                     <option>Semana</option>
                     <option>1</option>
                     <option>1</option>
@@ -156,7 +162,17 @@
               <p class="precio col-6 col-sm-6 col-lg-6">$[Precio]</p><p class="producto col-6 col-sm-6 col-lg-6">[Nombre Producto]</p>
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Maximo</h2>
+              <div class="row">
+                <h2 class="col-6 col-sm-6 col-lg-4">M&aacute;ximo</h2>
+                <div class="col-6 col-sm-6 col-lg-4">
+                  <select class="semana">
+                    <option>Semana</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                  </select>
+                </div>
+              </div>
               <p>El producto con el maximo precio de la semana. </p>
               <p class="precio col-6 col-sm-6 col-lg-6">$[Precio]</p><p class="producto col-6 col-sm-6 col-lg-6">[Nombre Producto]</p>
             </div><!--/span-->
