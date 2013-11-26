@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="unlam_favicon.ico">
 
-    <title>Seguridad y Calidad</title>
+    <title>TP Seguridad y Calidad</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
