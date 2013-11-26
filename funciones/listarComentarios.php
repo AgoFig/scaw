@@ -31,8 +31,42 @@ function traerComentarios($minDia,$maxDia) {
 
 }
 
-// Esta funcion se ocupa de generar el HTML
+/*
+ * ----------------------------------
+ * Demostracion de ataque XSS
+ * ----------------------------------
+ */
+
+/**
+ * Esta funcion se ocupa de generar el HTML de forma SEGURA.
+ * @param  [type] $minDia [description]
+ * @param  [type] $maxDia [description]
+ * @return [type]         [description]
+ */
 function mostrarComentarios($minDia,$maxDia) {
+	$listaComentarios = listarComentarios($minDia,$maxDia);
+
+	for ($i=0; $i < count($listaComentarios); $i++) { 
+		$fila = "<div class='row comentario'>";
+			$fila .= "<strong class='col-lg-4'>";
+		$fila .= $listaComentarios[i]['autor'];
+			$fila .= "</strong>";
+			$fila .= "<p class='col-lg-8'>";
+		$fila .= addslashes($listaComentarios[i]['comentario']);
+			$fila .= "</p>";
+		$fila .= "</div>";
+	}
+
+	echo $fila;
+}
+
+/**
+ * Esta funcion se ocupa de generar el HTML de forma INSEGURA
+ * @param  [type] $minDia [description]
+ * @param  [type] $maxDia [description]
+ * @return [type]         [description]
+ */
+function mostrarComentariosNO($minDia,$maxDia) {
 	$listaComentarios = listarComentarios($minDia,$maxDia);
 
 	for ($i=0; $i < count($listaComentarios); $i++) { 
