@@ -1,3 +1,6 @@
+<?php
+ // include 'funciones/conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -7,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="unlam_favicon.ico">
 
-    <title>TP Seguridad y Calidad</title>
+    <title>TP Seguridad y Calidad en Aplicaciones Web</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -70,7 +73,6 @@
               <table class="table table-striped table-bordered table-hover">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Producto</th>                 
                     <th>Precio Maximo</th>
                     <th>Precio Minimo</th>
@@ -79,49 +81,42 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr>
-                    <td>2</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr>
-                    <td>3</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="success">
-                    <td>4</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="danger">
-                    <td>5</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="warning">
-                    <td>6</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
                   </tr>
                   <tr class="active">
-                    <td>7</td>
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
@@ -201,7 +196,7 @@ if (isset($_SESSION)) {
 <?php 
 } else { ?>
               <div class="bs-example">
-                <legend>Bienvenido, [User]</legend>
+                <legend>Bienvenido</legend>
                 <p class="text-muted"><a href=''>Cerrar sesi&oacute;n</a></p>
               </div>
               <form class="bs-example form-horizontal">
